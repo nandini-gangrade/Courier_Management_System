@@ -1,6 +1,5 @@
 # Courier Management System
 
-
 ## TASK 1 Database Design
 
 ## TASK 1.1 ERD
