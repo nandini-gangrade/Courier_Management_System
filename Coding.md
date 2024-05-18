@@ -1,7 +1,7 @@
-### Task 1: Control Flow Statements
-1. **Check Delivery Status:**
-    - Write a Python function to check whether a given order is delivered or not based on its status.
-    
+# Task 1: Control Flow Statements
+## 1. Check Delivery Status:
+**- Write a Python function to check whether a given order is delivered or not based on its status.**
+
 ```python
 def check_delivery_status(status):
     if status.lower() == "delivered":
@@ -15,8 +15,8 @@ is_delivered = check_delivery_status(status)
 print(f"Is the order delivered? {is_delivered}")
 ```
 
-2. **Categorize Parcels by Weight:**
-    - Implement a switch-case statement to categorize parcels based on their weight into "Light," "Medium," or "Heavy."
+## 2. Categorize Parcels by Weight:
+**- Implement a switch-case statement to categorize parcels based on their weight into "Light," "Medium," or "Heavy."**
 
 ```python
 def categorize_parcel(weight):
@@ -34,8 +34,8 @@ parcel_category = categorize_parcel(weight)
 print(f"The parcel is categorized as {parcel_category}.")
 ```
 
-3. **User Authentication:**
-    - Create a login system for employees and customers using Python control flow statements.
+## 3. User Authentication:
+**- Create a login system for employees and customers using Python control flow statements.**
 
 ```python
 def login(username, password):
@@ -54,8 +54,8 @@ else:
     print("Invalid username or password.")
 ```
 
-4. **Courier Assignment Logic:**
-    - Develop a mechanism to assign couriers to shipments based on predefined criteria (e.g., proximity, load capacity) using loops.
+## 4. Courier Assignment Logic:
+**- Develop a mechanism to assign couriers to shipments based on predefined criteria (e.g., proximity, load capacity) using loops.**
 
 ```python
 def assign_courier(order, couriers):
@@ -74,10 +74,11 @@ if assigned_courier:
 else:
     print("No available courier found for the order.")
 ```
+---
 
-### Task 2: Loops and Iteration
-5. **Display Orders for a Specific Customer:**
-    - Write a Python program that uses a loop to display all the orders for a specific customer.
+# Task 2: Loops and Iteration
+## 5. Display Orders for a Specific Customer:
+**- Write a Python program that uses a loop to display all the orders for a specific customer.**
 
 ```python
 # Assuming you have a function to retrieve orders for a specific customer from the database
@@ -94,8 +95,8 @@ for order in orders:
     print(order)  # Display order details
 ```
 
-6. **Track Courier's Real-Time Location:**
-    - Implement a while loop to track the real-time location of a courier until it reaches its destination.
+## 6. Track Courier's Real-Time Location:
+**- Implement a while loop to track the real-time location of a courier until it reaches its destination.**
 
 ```python
 # Assuming you have a function to get real-time location updates for a courier
@@ -110,10 +111,10 @@ def track_courier(courier_id):
 courier_id = 201
 track_courier(courier_id)
 ```
-
-### Task 3: Arrays and Data Structures
-7. **Tracking History of a Parcel:**
-    - Create an array to store the tracking history of a parcel, where each entry represents a location update.
+---
+# Task 3: Arrays and Data Structures
+## 7. Tracking History of a Parcel:
+**- Create an array to store the tracking history of a parcel, where each entry represents a location update.**
 
 ```python
 # Assuming you have a Parcel class with a tracking_history attribute
@@ -129,8 +130,8 @@ parcel1.tracking_history.append("Location 2: Out for delivery")
 print("Tracking history of Parcel 1:", parcel1.tracking_history)
 ```
 
-8. **Find Nearest Available Courier:**
-    - Implement a method to find the nearest available courier for a new order using an array of couriers.
+## 8. Find Nearest Available Courier:
+**- Implement a method to find the nearest available courier for a new order using an array of couriers.**
 
 ```python
 def find_nearest_available_courier(customer_location, couriers):
@@ -157,10 +158,11 @@ else:
     print("No available couriers found.")
 
 ```
+---
 
-### Task 4: Strings, 2D Arrays, User-defined Functions, Hashmap
-9. **Parcel Tracking:**
-    - Create a program that allows users to input a parcel tracking number. Store the tracking number and status in a 2D String Array. Simulate the tracking process by displaying messages based on the tracking number's status.
+# Task 4: Strings, 2D Arrays, User-defined Functions, Hashmap
+## 9. Parcel Tracking:
+**- Create a program that allows users to input a parcel tracking number. Store the tracking number and status in a 2D String Array. Simulate the tracking process by displaying messages based on the tracking number's status.**
 
 ```python
 # Assuming you have a dictionary or database to store parcel tracking information
@@ -182,8 +184,8 @@ track_number = input("Enter parcel tracking number: ")
 track_parcel(track_number)
 ```
 
-10. **Customer Data Validation:**
-    - Write a function to validate customer information such as name, address, and phone number based on specified criteria.
+## 10. Customer Data Validation:
+**- Write a function to validate customer information such as name, address, and phone number based on specified criteria.**
 
 ```python
 import re
@@ -216,8 +218,8 @@ is_valid_name = validate_customer_info(name, "name")
 print(f"Is the name valid? {is_valid_name}")
 ```
 
-11. **Address Formatting:**
-    - Develop a function that takes an address as input and formats it correctly.
+## 11. Address Formatting:
+**- Develop a function that takes an address as input and formats it correctly.**
 
 ```python
 def format_address(address):
@@ -231,8 +233,8 @@ formatted_address = format_address(address)
 print("Formatted address:", formatted_address)
 ```
 
-12. **Order Confirmation Email:**
-    - Create a program that generates an order confirmation email with details such as the customer's name, order number, delivery address, and expected delivery date.
+## 12. Order Confirmation Email:
+**- Create a program that generates an order confirmation email with details such as the customer's name, order number, delivery address, and expected delivery date.**
 
 ```python
 def generate_order_confirmation_email(order_number, customer_name, delivery_address, delivery_date):
@@ -249,8 +251,8 @@ print("Order confirmation email:")
 print(confirmation_email)
 ```
 
-13. **Calculate Shipping Costs:**
-    - Develop a function that calculates the shipping cost based on the distance between two locations and the weight of the parcel.
+## 13. Calculate Shipping Costs:
+**- Develop a function that calculates the shipping cost based on the distance between two locations and the weight of the parcel.**
 
 ```python
 def calculate_shipping_cost(source, destination, parcel_weight):
@@ -268,8 +270,8 @@ shipping_cost = calculate_shipping_cost(source_address, destination_address, par
 print("Shipping cost:", shipping_cost)
 ```
 
-14. **Password Generator:**
-    - Create a function that generates secure passwords for courier system accounts.
+## 14. Password Generator:
+**- Create a function that generates secure passwords for courier system accounts.**
 
 ```python
 import random
@@ -285,8 +287,8 @@ password = generate_password()
 print("Generated password:", password)
 ```
 
-15. **Find Similar Addresses:**
-    - Implement a function that finds similar addresses in the system using string functions.
+## 15. Find Similar Addresses:
+**- Implement a function that finds similar addresses in the system using string functions.**
 
 ```python
 def find_similar_addresses(address, address_list):
